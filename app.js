@@ -84,14 +84,11 @@ function addMonster(){
 	var charisma = document.getElementById("charisma").value;
 	var classRadios = document.getElementsByName('plyrClassOpt');
 	var classRadiosLength = classRadios.length;
-	console.log("Hello??????");
 	for (var b = 0; b < classRadiosLength; b++) {
 	    if (classRadios[b].checked) {
 	    	console.log(classRadios[b].value);
 	        var playerClass = classRadios[b].value;
 	        break;
-	    } else {
-	    	console.log("the problem is the if loop");
 	    }
 	}
 	
