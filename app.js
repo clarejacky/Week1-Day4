@@ -98,9 +98,9 @@ function addMonster(){
         alert("Please enter a name and statistics to make a monster!");
     }
     else {
-    	 if(isNaN(strength)) {
-      		alert("Please enter a number value for Strength");
-      	} else {
+      if(isNaN(strength) || isNaN(dexterity)) {
+      		alert("Please enter a number value for Strength and Dexterity");
+      } else {
         if (playerClass != "") {
             var newObject = new Player(name, strength, dexterity, constitution, wisdom, intelligence, charisma, playerClass);
         } else {
