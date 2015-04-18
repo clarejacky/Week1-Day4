@@ -35,6 +35,7 @@
         JS example for getting button (need to confirm that text box works the same): var x = document.getElementById("myBtn");
         JS example for creating a button in the HTML: var x = document.createElement("BUTTON");
     -->
+        <form>
 
 		<label>Name: <input type="text" id="name" required/></label></br>
 		<label>Strength <input type="text" id="strength"/></label></br>
@@ -44,13 +45,16 @@
 		<label>Intelligence <input type="text" id="intelligence"/></label></br>
 		<label>Charisma <input type="text" id="charisma"/></label></br>
 		<label>Player Class</label>
-		<form>
-			<input type="radio" name="group" id="class" checked>None
-			<br>
-			<input type="radio" name="group" id="class">Cleric
+
+            <label>Player Class:</label><br>
+            <input type="radio" name="class" id="classNone" checked/>None<br>
+			<input type="radio" name="class" id="classCleric" value="Cleric">Cleric<br>
+            <input type="radio" name="class" id="classFighter" value="Fighter">Fighter<br>
+            <input type="radio" name="class" id="classRogue" value="Rogue">Rogue<br>
+            <input type="radio" name="class" id="classWizard" value="Wizard">Wizard
 		</form>
-		
-		<button type="button" id="addMonster" onclick="addMonster()">Add Player/Monster to Records</button>
+
+        <button type="button" id="addMonster" onclick="addMonster()">Add Player/Monster to Records</button>
 		
 	<table style="width:100%" id="monsters">
  		 <tr>
