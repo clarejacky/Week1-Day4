@@ -37,6 +37,7 @@ Monster.prototype.attack = function() {
     alert(this.name + " attacks for " + attackValue + ".");
 };
 
+
 // Adds the monster to the table view
 Monster.prototype.addToTable = function() {
     // Temporarily pack monster attributes in an array so that we can loop through them instead of assigning them one at a time
@@ -97,6 +98,9 @@ function addMonster(){
         alert("Please enter a name and statistics to make a monster!");
     }
     else {
+    	 if(isNaN(strength)) {
+      		alert("Please enter a number value for Strength");
+      	} else {
         if (playerClass != "") {
             var newObject = new Player(name, strength, dexterity, constitution, wisdom, intelligence, charisma, playerClass);
         } else {
@@ -105,4 +109,5 @@ function addMonster(){
         playerArray.push(newObject);
         newObject.addToTable();
     }
+  }
 }
