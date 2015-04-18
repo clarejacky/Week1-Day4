@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    width: 660px;
+    width: 760px;
     padding: 10px 20px; /* adds 10px padding on top/bottom and 20px on right/left */
     margin: 0 auto; /* center the div on the screen */
     background-color: #fff;
@@ -23,9 +23,7 @@ label {
 }
 
 button {
-	width: 200px;
-    height: 30px;
-    background-color: #CE3C1B;
+    background-color: #F4FA58;
     margin: 20px 0;
 }
 
@@ -36,4 +34,9 @@ form {
 .column {
     width: 50%;
     float: left;
+}
+th {
+	border: 1px solid black;
+	padding: 10px;
+
 }
